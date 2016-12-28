@@ -28,7 +28,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-  
+
   .state('tab.tododetail', {
       url: '/todos/:id',
       views: {

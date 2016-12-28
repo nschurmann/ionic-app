@@ -1,7 +1,20 @@
 <ion-view view-title="Detail">
    <ion-content class="padding">
-     <p>
-       {{x}}
-     </p>
+     <div class="list card">
+      <div class="item item-avatar">
+        <h2>ID: {{ todo.id }}</h2>
+      </div>
+      <div class="item item-body">
+        <h2>Descripción</h2>
+        <p>
+          {{ todo.desc }}
+        </p>
+        <p>{{ todo.completado }}</p>
+        <p>
+          <a ng-click="Todos.completar(todo)" class="button button-positive">Completar</a>
+          <a ng-click="eliminar(todo)" class="button button-assertive">Eliminar</a>
+        </p>
+      </div>
+    </div>
    </ion-content>
  </ion-view>
